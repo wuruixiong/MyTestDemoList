@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+
 /**
  * A simple launcher activity offering access to the individual samples in this project.
  */

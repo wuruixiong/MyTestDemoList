@@ -18,17 +18,6 @@
 
     <style name="Widget" />
 
-    <style name="Widget.SampleDashboard.Card" parent="CardView.Light">
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="cardCornerRadius">4dp</item>
-        <item name="cardElevation">5dp</item>
-        <item name="contentPadding">10dp</item>
-    </style>
-
-    <style name="Widget.SampleDashboard.Item" parent="Widget">
-    </style>
-
     <style name="Widget.SampleDashboard.Item.Title" parent="Widget">
         <item name="android:layout_marginBottom">@dimen/margin_tiny</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
@@ -41,34 +30,4 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <declare-styleable name="CardView">
-        <attr format="color" name="cardBackgroundColor"/>
-        <attr format="dimension" name="cardCornerRadius"/>
-        <attr format="dimension" name="cardElevation"/>
-        <attr format="dimension" name="cardMaxElevation"/>
-        <attr format="boolean" name="cardUseCompatPadding"/>
-        <attr format="boolean" name="cardPreventCornerOverlap"/>
-        <attr format="dimension" name="contentPadding"/>
-        <attr format="dimension" name="contentPaddingLeft"/>
-        <attr format="dimension" name="contentPaddingRight"/>
-        <attr format="dimension" name="contentPaddingTop"/>
-        <attr format="dimension" name="contentPaddingBottom"/>
-        <attr name="android:minWidth"/>
-        <attr name="android:minHeight"/>
-    </declare-styleable>
-    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
-    <dimen name="cardview_default_elevation">2dp</dimen>
-    <dimen name="cardview_default_radius">2dp</dimen>
-    <style name="Base.CardView" parent="android:Widget">
-        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
-        <item name="cardElevation">@dimen/cardview_default_elevation</item>
-        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
-        <item name="cardUseCompatPadding">false</item>
-        <item name="cardPreventCornerOverlap">true</item>
-    </style>
-    <style name="CardView" parent="Base.CardView">
-    </style>
-    <style name="CardView.Light">
-        <item name="cardBackgroundColor">#FFFFFFFF</item>
-    </style>
 </resources>
