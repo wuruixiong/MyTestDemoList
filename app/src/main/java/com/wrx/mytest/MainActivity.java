@@ -13,9 +13,6 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 
-/**
- * A simple launcher activity offering access to the individual samples in this project.
- */
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
     private Sample[] mSamples;
     private GridView mGridView;
@@ -27,10 +24,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
                 new Sample("Hello title1", "hello1",
-                        TestActivity1.class),
-                new Sample("Hello title2", "hello2",
-                        TestActivity2.class),
-
+                        TestActivity.class),
+                new Sample("Open GL", "GL SurfaceView Test",
+                        GLSurActivity.class),
         };
 
         // Prepare the GridView
