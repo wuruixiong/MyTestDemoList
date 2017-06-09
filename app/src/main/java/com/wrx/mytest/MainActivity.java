@@ -27,6 +27,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         TestActivity.class),
                 new Sample("Open GL", "GL SurfaceView Test",
                         GLSurActivity.class),
+                new Sample("View Lifecycle", "Test View Create Process Method",
+                        ViewLifecycleActivity.class),
+                new Sample("View Touch", "Test View Touch",
+                        TouchTestActivity.class),
         };
 
         // Prepare the GridView

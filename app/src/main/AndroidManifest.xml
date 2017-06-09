@@ -26,6 +26,8 @@
 
         <activity android:name=".TestActivity"/>
         <activity android:name=".GLSurActivity"/>
+        <activity android:name=".ViewLifecycleActivity"/>
+        <activity android:name=".TouchTestActivity"/>
 
     </application>
 

@@ -1,4 +1,4 @@
-package com.wrx.mytest.view;
+package com.wrx.mytest.opengl;
 
 
 import android.opengl.GLES20;

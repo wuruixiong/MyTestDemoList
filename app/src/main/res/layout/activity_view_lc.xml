@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.wrx.mytest.view.ViewLcParent
+        android:id="@+id/lc_parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"
+        >
+
+        <com.wrx.mytest.view.ViewLcChild
+            android:id="@+id/lc_child"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_light"
+            android:layout_gravity="center"
+            />
+
+    </com.wrx.mytest.view.ViewLcParent>
+
+    <Button
+        android:id="@+id/lc_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        />
+
+</LinearLayout>

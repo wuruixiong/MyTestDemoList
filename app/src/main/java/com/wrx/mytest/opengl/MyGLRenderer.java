@@ -1,10 +1,7 @@
-package com.wrx.mytest.view;
+package com.wrx.mytest.opengl;
 
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
-
-import java.nio.FloatBuffer;
-import java.nio.ShortBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
