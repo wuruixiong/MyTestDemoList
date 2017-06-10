@@ -21,14 +21,21 @@ public class MyGLRenderer implements GLSurfaceView.Renderer{
     private float[] mRotationMatrix = new float[16];
 
     private Triangle mTriangle;
+    public volatile float mAngle;
 
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-
         mTriangle = new Triangle();
-
         // Set the background frame color
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    }
+
+    public float getAngle() {
+        return mAngle;
+    }
+
+    public void setAngle(float angle) {
+        mAngle = angle;
     }
 
     @Override
@@ -56,9 +63,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer{
         Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
 
         // Create a rotation transformation for the triangle
-        long time = SystemClock.uptimeMillis() % 4000L;
+        // TODO: rotate with time
+        /*long time = SystemClock.uptimeMillis() % 4000L;
         float angle = 0.090f * ((int) time);
-        Matrix.setRotateM(mRotationMatrix, 0, angle, 0, 0, -1.0f);
+        Matrix.setRotateM(mRotationMatrix, 0, angle, 0, 0, -1.0f);*/
+
+        // TODO: rotate with touch
+        Matrix.setRotateM(mRotationMatrix, 0, mAngle, 0, 0, -1.0f);
 
         // Combine the rotation matrix with the projection and camera view
         // Note that the mMVPMatrix factor *must be first* in order
