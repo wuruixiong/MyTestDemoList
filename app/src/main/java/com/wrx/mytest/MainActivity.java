@@ -1,5 +1,6 @@
 package com.wrx.mytest;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 
@@ -11,6 +12,8 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.wrx.mytest.textIntent.IntentTestActivity;
 
 
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener {
@@ -31,6 +34,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         ViewLifecycleActivity.class),
                 new Sample("View Touch", "Test View Touch",
                         TouchTestActivity.class),
+                new Sample("Intent Test", "Intent Test",
+                        IntentTestActivity.class),
+                new Sample("Elevation Test", "Elevation Shade Test",
+                        ElevationActivity.class),
         };
 
         // Prepare the GridView

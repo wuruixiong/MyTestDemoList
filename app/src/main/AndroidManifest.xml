@@ -28,7 +28,13 @@
         <activity android:name=".GLSurActivity"/>
         <activity android:name=".ViewLifecycleActivity"/>
         <activity android:name=".TouchTestActivity"/>
-
+        <activity android:name=".textIntent.IntentTestActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".textIntent.IntentTestActivity2"
+            android:launchMode="singleTask"/>
+        <activity android:name=".textIntent.IntentTestActivity3"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ElevationActivity" />
     </application>
 
 </manifest>
