@@ -26,10 +26,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
-                new Sample("Hello title1", "hello1",
-                        TestActivity1.class),
-                new Sample("Hello title2", "hello2",
-                        TestActivity2.class),
+                new Sample("Hello title", "hello",
+                        TestActivity.class),
+                new Sample("Recycle View Touch Help", "Recycle View Touch Help",
+                        RecycleTouchHelpActivity.class),
 
         };
 
