@@ -38,6 +38,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         IntentTestActivity.class),
                 new Sample("Elevation Test", "Elevation Shade Test",
                         ElevationActivity.class),
+                new Sample("Multiple Pointers", "The view touch with multiple pointers",
+                        MultiplePointersActivity.class),
         };
 
         // Prepare the GridView

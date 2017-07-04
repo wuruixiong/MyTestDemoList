@@ -24,7 +24,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#555555"
+            android:background="@android:color/darker_gray"
             />
 
         <LinearLayout
@@ -43,7 +43,28 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#555555"
+            android:background="@android:color/darker_gray"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
             />
 
         <Button
