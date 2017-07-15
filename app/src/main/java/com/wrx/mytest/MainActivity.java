@@ -1,6 +1,7 @@
 package com.wrx.mytest;
 
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.os.Bundle;
 
 
@@ -40,6 +41,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         ElevationActivity.class),
                 new Sample("Multiple Pointers", "The view touch with multiple pointers",
                         MultiplePointersActivity.class),
+                new Sample("Mask Test", "Test the layout mask",
+                        MaskActivity.class),
         };
 
         // Prepare the GridView

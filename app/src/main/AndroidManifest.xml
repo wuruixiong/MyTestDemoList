@@ -38,6 +38,7 @@
 
         <activity android:name=".ElevationActivity" />
         <activity android:name=".MultiplePointersActivity" />
+        <activity android:name=".MaskActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wrx.mytest.view.MaskLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light" />
+
+    </com.wrx.mytest.view.MaskLayout>
+</LinearLayout>
+

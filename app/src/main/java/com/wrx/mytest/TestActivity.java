@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -22,6 +23,7 @@ public class TestActivity extends Activity{
 
     private Button mButton;
     private EditText mEditText;
+    private ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class TestActivity extends Activity{
 
         mEditText = (EditText) findViewById(R.id.test_edit);
         mButton = (Button) findViewById(R.id.test_bt);
+        mImageView = (ImageView) findViewById(R.id.test_image);
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
