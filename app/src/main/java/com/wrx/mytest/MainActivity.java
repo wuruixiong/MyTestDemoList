@@ -43,7 +43,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         MultiplePointersActivity.class),
                 new Sample("Mask Test", "Test the layout mask",
                         MaskActivity.class),
-        };
+                new Sample("Be Text Mask", "Test acticity mask activity",
+                        TextBeMaskActivity.class),        };
 
         // Prepare the GridView
         mGridView = (GridView) findViewById(android.R.id.list);

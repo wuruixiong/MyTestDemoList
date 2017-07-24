@@ -39,6 +39,12 @@
         <activity android:name=".ElevationActivity" />
         <activity android:name=".MultiplePointersActivity" />
         <activity android:name=".MaskActivity" />
+        <activity android:name=".TextMaskActivity"
+            android:theme="@style/myTransparent"
+            />
+        <activity android:name=".TextBeMaskActivity"
+            />
+
     </application>
 
 </manifest>
