@@ -19,6 +19,7 @@
 
         <activity android:name=".TestActivity"/>
         <activity android:name=".RecycleTouchHelpActivity"/>
+        <activity android:name=".GesturesActivity"/>
 
     </application>
 

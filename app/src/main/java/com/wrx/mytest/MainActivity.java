@@ -30,6 +30,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         TestActivity.class),
                 new Sample("Recycle View Touch Help", "Recycle View Touch Help",
                         RecycleTouchHelpActivity.class),
+                new Sample("Gestures", "Gestures touch test",
+                        GesturesActivity.class),
 
         };
 
