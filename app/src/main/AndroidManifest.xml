@@ -24,7 +24,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TestActivity"/>
+        <activity android:name=".TestActivity"
+            android:theme="@style/MyBarTheme"
+            />
         <activity android:name=".GLSurActivity"/>
         <activity android:name=".ViewLifecycleActivity"/>
         <activity android:name=".TouchTestActivity"/>
@@ -45,6 +47,7 @@
         <activity android:name=".TextBeMaskActivity"
             />
         <activity android:name=".MixViewEfActivity" />
+        <activity android:name=".ZoomActivity" />
 
 
     </application>

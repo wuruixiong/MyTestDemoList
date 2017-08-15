@@ -13,7 +13,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
-
 import com.wrx.mytest.textIntent.IntentTestActivity;
 
 
@@ -47,6 +46,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         TextBeMaskActivity.class),
                 new Sample("Mix Views", "Some views for effect",
                         MixViewEfActivity.class),
+                new Sample("Image zoom", "zoom",
+                        ZoomActivity.class),
         };
 
 
