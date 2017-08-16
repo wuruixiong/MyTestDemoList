@@ -12,6 +12,9 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.wrx.mytest.glide.GlideActivity;
+
 
 /**
  * A simple launcher activity offering access to the individual samples in this project.
@@ -32,7 +35,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         RecycleTouchHelpActivity.class),
                 new Sample("Gestures", "Gestures touch test",
                         GesturesActivity.class),
-
+                new Sample("Glide", "Glide libs test",
+                        GlideActivity.class),
         };
 
         // Prepare the GridView
