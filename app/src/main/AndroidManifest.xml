@@ -27,7 +27,8 @@
         <activity android:name=".TestActivity"
             android:theme="@style/MyBarTheme"
             />
-        <activity android:name=".GLSurActivity"/>
+        <activity android:name=".opengl.GLSurActivity"/>
+        <activity android:name=".opengl.GLSurActivity2"/>
         <activity android:name=".ViewLifecycleActivity"/>
         <activity android:name=".TouchTestActivity"/>
 

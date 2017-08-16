@@ -1,7 +1,5 @@
 package com.wrx.mytest;
 
-import android.graphics.Color;
-import android.graphics.Matrix;
 import android.os.Bundle;
 
 
@@ -13,6 +11,9 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import com.wrx.mytest.opengl.GLSurActivity;
+import com.wrx.mytest.opengl.GLSurActivity2;
 import com.wrx.mytest.textIntent.IntentTestActivity;
 
 
@@ -26,10 +27,12 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
-                new Sample("Hello title1", "hello1",
+                new Sample("Hello title", "hello my test demo list",
                         TestActivity.class),
                 new Sample("Open GL", "GL SurfaceView Test",
                         GLSurActivity.class),
+                new Sample("Open GL 2", "GL SurfaceView Test",
+                        GLSurActivity2.class),
                 new Sample("View Lifecycle", "Test View Create Process Method",
                         ViewLifecycleActivity.class),
                 new Sample("View Touch", "Test View Touch",
