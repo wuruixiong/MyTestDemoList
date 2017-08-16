@@ -12,8 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.wrx.mytest.glide.GlideActivity;
+import com.wrx.mytest.http.OkHttpActivity;
 
 
 /**
@@ -37,6 +37,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         GesturesActivity.class),
                 new Sample("Glide", "Glide libs test",
                         GlideActivity.class),
+                new Sample("OK http", "OK http test",
+                        OkHttpActivity.class),
         };
 
         // Prepare the GridView
