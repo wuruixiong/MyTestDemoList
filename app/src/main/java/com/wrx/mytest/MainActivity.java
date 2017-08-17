@@ -54,6 +54,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         ZoomActivity.class),
                 new Sample("Login Layout", "Login and keyboard up test",
                         LoginActivity.class),
+                new Sample("InputType List", "All input type EditView",
+                        InputTypeActivity.class),
         };
 
 
