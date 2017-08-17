@@ -25,7 +25,6 @@
         </activity>
 
         <activity android:name=".TestActivity"
-            android:theme="@style/MyBarTheme"
             />
         <activity android:name=".opengl.GLSurActivity"/>
         <activity android:name=".opengl.GLSurActivity2"/>
@@ -47,9 +46,11 @@
             />
         <activity android:name=".TextBeMaskActivity"
             />
-        <activity android:name=".MixViewEfActivity" />
+        <activity android:name=".MixViewEfActivity"
+            android:theme="@style/MyBarTheme"
+            />
         <activity android:name=".ZoomActivity" />
-
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
 
     </application>
 

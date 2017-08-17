@@ -29,6 +29,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         mSamples = new Sample[]{
                 new Sample("Hello title", "hello my test demo list",
                         TestActivity.class),
+                new Sample("Status bar and mix views", "Some views for effect : " +
+                        "dotted line"
+                        , MixViewEfActivity.class),
                 new Sample("Open GL", "GL SurfaceView Test",
                         GLSurActivity.class),
                 new Sample("Open GL 2", "GL SurfaceView Test",
@@ -47,10 +50,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         MaskActivity.class),
                 new Sample("Be Text Mask", "Test activity mask activity",
                         TextBeMaskActivity.class),
-                new Sample("Mix Views", "Some views for effect",
-                        MixViewEfActivity.class),
                 new Sample("Image zoom", "zoom",
                         ZoomActivity.class),
+                new Sample("Login Layout", "Login and keyboard up test",
+                        LoginActivity.class),
         };
 
 
