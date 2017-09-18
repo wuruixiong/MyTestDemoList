@@ -26,12 +26,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TestActivity"
+        <activity android:name=".activity.TestActivity"
             />
         <activity android:name=".opengl.GLSurActivity"/>
         <activity android:name=".opengl.GLSurActivity2"/>
-        <activity android:name=".ViewLifecycleActivity"/>
-        <activity android:name=".TouchTestActivity"/>
+        <activity android:name=".activity.ViewLifecycleActivity"/>
+        <activity android:name=".activity.TouchTestActivity"/>
 
         <activity android:name=".textIntent.IntentTestActivity"
             android:launchMode="singleTask"/>
@@ -40,20 +40,20 @@
         <activity android:name=".textIntent.IntentTestActivity3"
             android:launchMode="singleTask"/>
 
-        <activity android:name=".ElevationActivity" />
-        <activity android:name=".MultiplePointersActivity" />
-        <activity android:name=".MaskActivity" />
-        <activity android:name=".TextMaskActivity"
+        <activity android:name=".activity.ElevationActivity" />
+        <activity android:name=".activity.MultiplePointersActivity" />
+        <activity android:name=".activity.MaskActivity" />
+        <activity android:name=".activity.TextMaskActivity"
             android:theme="@style/myTransparent"
             />
-        <activity android:name=".TextBeMaskActivity"
+        <activity android:name=".activity.TextBeMaskActivity"
             />
-        <activity android:name=".MixViewEfActivity"
+        <activity android:name=".activity.MixViewEfActivity"
             android:theme="@style/MyBarTheme"
             />
-        <activity android:name=".ZoomActivity" />
-        <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".InputTypeActivity" />
+        <activity android:name=".activity.AnimZoomActivity" />
+        <activity android:name=".activity.LoginActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activity.InputTypeActivity" />
     </application>
 
 </manifest>

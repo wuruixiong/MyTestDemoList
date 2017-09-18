@@ -1,4 +1,4 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -32,6 +32,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.wrx.mytest.R;
 import com.wrx.mytest.view.TestImageView;
 
 import java.io.File;

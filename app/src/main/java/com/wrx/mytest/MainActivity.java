@@ -12,6 +12,17 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.activity.ElevationActivity;
+import com.wrx.mytest.activity.InputTypeActivity;
+import com.wrx.mytest.activity.LoginActivity;
+import com.wrx.mytest.activity.MaskActivity;
+import com.wrx.mytest.activity.MixViewEfActivity;
+import com.wrx.mytest.activity.MultiplePointersActivity;
+import com.wrx.mytest.activity.TestActivity;
+import com.wrx.mytest.activity.TextBeMaskActivity;
+import com.wrx.mytest.activity.TouchTestActivity;
+import com.wrx.mytest.activity.ViewLifecycleActivity;
+import com.wrx.mytest.activity.AnimZoomActivity;
 import com.wrx.mytest.opengl.GLSurActivity;
 import com.wrx.mytest.opengl.GLSurActivity2;
 import com.wrx.mytest.textIntent.IntentTestActivity;
@@ -50,8 +61,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         MaskActivity.class),
                 new Sample("Be Text Mask", "Test activity mask activity",
                         TextBeMaskActivity.class),
-                new Sample("Image zoom", "zoom",
-                        ZoomActivity.class),
+                new Sample("Anim image zoom", "zooming with anim",
+                        AnimZoomActivity.class),
                 new Sample("Login Layout", "Login and keyboard up test",
                         LoginActivity.class),
                 new Sample("InputType List", "All input type EditView",

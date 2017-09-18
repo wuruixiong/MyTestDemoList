@@ -1,4 +1,4 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
 import android.app.Activity;
 import android.os.Build;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.wrx.mytest.R;
 
 /**
  * Created by zhuanfa on 2017/8/8.

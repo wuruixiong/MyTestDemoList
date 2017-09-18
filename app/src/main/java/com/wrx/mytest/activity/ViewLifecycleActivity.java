@@ -1,13 +1,12 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
+import com.wrx.mytest.R;
 import com.wrx.mytest.view.ViewLcChild;
 import com.wrx.mytest.view.ViewLcParent;
 

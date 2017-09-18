@@ -1,4 +1,4 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,11 +12,13 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
+import com.wrx.mytest.R;
+
 /**
  * Created by zhuanfa on 2017/8/11.
  */
 
-public class ZoomActivity extends Activity{
+public class AnimZoomActivity extends Activity{
 
     private Animator mCurrentAnimator;
 
