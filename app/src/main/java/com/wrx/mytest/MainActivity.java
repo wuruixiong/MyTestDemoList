@@ -23,6 +23,7 @@ import com.wrx.mytest.activity.TextBeMaskActivity;
 import com.wrx.mytest.activity.TouchTestActivity;
 import com.wrx.mytest.activity.ViewLifecycleActivity;
 import com.wrx.mytest.activity.AnimZoomActivity;
+import com.wrx.mytest.memory.MemoryActivity;
 import com.wrx.mytest.opengl.GLSurActivity;
 import com.wrx.mytest.opengl.GLSurActivity2;
 import com.wrx.mytest.textIntent.IntentTestActivity;
@@ -67,6 +68,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         LoginActivity.class),
                 new Sample("InputType List", "All input type EditView",
                         InputTypeActivity.class),
+                new Sample("Memory analyse", "memory overflow analyse",
+                        MemoryActivity.class),
         };
 
 

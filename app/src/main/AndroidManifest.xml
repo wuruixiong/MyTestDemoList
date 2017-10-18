@@ -54,6 +54,8 @@
         <activity android:name=".activity.AnimZoomActivity" />
         <activity android:name=".activity.LoginActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".activity.InputTypeActivity" />
+        <activity android:name=".memory.MemoryActivity" />
+
     </application>
 
 </manifest>
