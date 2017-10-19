@@ -27,10 +27,11 @@
         </activity>
 
         <activity android:name=".TestActivity"/>
-        <activity android:name=".RecycleTouchHelpActivity"/>
+        <activity android:name=".recycle.RecycleTouchHelpActivity"/>
         <activity android:name=".GesturesActivity"/>
         <activity android:name=".glide.GlideActivity"/>
         <activity android:name=".http.OkHttpActivity"/>
+        <activity android:name=".recycle.RecycleBtDeleteActivity"/>
     </application>
 
 </manifest>
