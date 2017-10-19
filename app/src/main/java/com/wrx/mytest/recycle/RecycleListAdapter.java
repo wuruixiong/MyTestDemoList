@@ -49,13 +49,20 @@ public class RecycleListAdapter extends RecyclerSwipeAdapter<RecycleListAdapter.
             mView = itemView;
             mTextView = (TextView)mView.findViewById(R.id.position);
             mImageView = (ImageView)mView.findViewById(R.id.trash);
+            mView.setOnClickListener(this);
             mImageView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext().getApplicationContext(),
-                    "click delete " + getAdapterPosition() + "", Toast.LENGTH_SHORT).show();
+            if (view.getId() == R.id.trash) {
+                Toast.makeText(view.getContext().getApplicationContext(),
+                        "click delete " + getAdapterPosition() + "", Toast.LENGTH_SHORT).show();
+            } else
+            if (view.getId() == R.id.swipe) {
+                Toast.makeText(view.getContext().getApplicationContext(),
+                        "click position " + getAdapterPosition() + "", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

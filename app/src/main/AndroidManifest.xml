@@ -32,6 +32,8 @@
         <activity android:name=".glide.GlideActivity"/>
         <activity android:name=".http.OkHttpActivity"/>
         <activity android:name=".recycle.RecycleBtDeleteActivity"/>
+        <activity android:name=".recycle.RecycleMeActivity"/>
+
     </application>
 
 </manifest>

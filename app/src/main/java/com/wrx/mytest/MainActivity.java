@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.wrx.mytest.glide.GlideActivity;
 import com.wrx.mytest.http.OkHttpActivity;
 import com.wrx.mytest.recycle.RecycleBtDeleteActivity;
+import com.wrx.mytest.recycle.RecycleMeActivity;
 import com.wrx.mytest.recycle.RecycleTouchHelpActivity;
 
 
@@ -45,6 +46,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         OkHttpActivity.class),
                 new Sample("Recycle delete", "recycle delete",
                         RecycleBtDeleteActivity.class),
+                new Sample("Recycle delete2", "recycle delete",
+                        RecycleMeActivity.class),
         };
 
         // Prepare the GridView
