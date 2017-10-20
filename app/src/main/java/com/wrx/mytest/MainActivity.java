@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.activity.DragActivity;
 import com.wrx.mytest.activity.ElevationActivity;
 import com.wrx.mytest.activity.InputTypeActivity;
 import com.wrx.mytest.activity.LoginActivity;
@@ -70,6 +71,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         InputTypeActivity.class),
                 new Sample("Memory analyse", "memory overflow analyse",
                         MemoryActivity.class),
+                new Sample("Drag", "drag view test",
+                        DragActivity.class),
         };
 
 
