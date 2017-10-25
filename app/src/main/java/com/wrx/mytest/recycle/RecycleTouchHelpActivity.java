@@ -1,4 +1,4 @@
-package com.wrx.mytest;
+package com.wrx.mytest.recycle;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.wrx.mytest.recycle.TouchHelpAdapter;
+import com.wrx.mytest.R;
+import com.wrx.mytest.recycle.BaseTouchHelpAdapter;
 
 /**
  * Created by Administrator on 2017/5/5.
@@ -17,7 +18,7 @@ import com.wrx.mytest.recycle.TouchHelpAdapter;
 public class RecycleTouchHelpActivity extends Activity{
 
     private RecyclerView mRecyclerView;
-    private TouchHelpAdapter mAdapter;
+    private BaseTouchHelpAdapter mAdapter;
 
 
     @Override
@@ -27,7 +28,7 @@ public class RecycleTouchHelpActivity extends Activity{
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycle_view);
 
-        mAdapter = new TouchHelpAdapter();
+        mAdapter = new BaseTouchHelpAdapter();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         mRecyclerView.setAdapter(mAdapter);
 

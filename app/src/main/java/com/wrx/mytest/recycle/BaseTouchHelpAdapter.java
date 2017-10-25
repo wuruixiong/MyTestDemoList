@@ -14,11 +14,11 @@ import java.util.List;
  * Created by zhuanfa on 2017/7/4.
  */
 
-public class TouchHelpAdapter extends RecyclerView.Adapter<TouchHelpAdapter.MyViewHolder>{
+public class BaseTouchHelpAdapter extends RecyclerView.Adapter<BaseTouchHelpAdapter.MyViewHolder>{
 
     private ArrayList<String> mStringArrayList;
 
-    public TouchHelpAdapter() {
+    public BaseTouchHelpAdapter() {
         super();
         mStringArrayList = new ArrayList<>();
         for (int i = 0; i < 25; i++) {
