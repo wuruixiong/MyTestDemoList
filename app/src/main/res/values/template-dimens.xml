@@ -18,6 +18,8 @@
 
     <!-- Define standard dimensions to comply with Holo-style grids and rhythm. -->
 
+    <dimen name="color_pick_height">4dp</dimen>
+
     <dimen name="margin_tiny">4dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_medium">16dp</dimen>

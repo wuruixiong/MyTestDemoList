@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.clip.PathActivity;
 import com.wrx.mytest.glide.GlideActivity;
 import com.wrx.mytest.http.OkHttpActivity;
 
@@ -39,6 +40,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         GlideActivity.class),
                 new Sample("OK http", "OK http test",
                         OkHttpActivity.class),
+                new Sample("Draw path", "draw path",
+                        PathActivity.class),
         };
 
         // Prepare the GridView

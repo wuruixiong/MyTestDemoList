@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/user_faceback_drawable" android:drawable="@android:color/darker_gray" />
+
+   <!-- <item android:id="@+id/user_face_drawable" android:drawable="@android:color/holo_blue_light"
+        android:left="10.0dip" android:top="18.0dip" android:right="25.0dip" android:bottom="35.0dip" />-->
+    <item android:gravity="center" android:drawable="@android:color/holo_blue_bright" />
+</layer-list>

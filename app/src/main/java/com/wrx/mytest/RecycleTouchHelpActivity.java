@@ -19,6 +19,7 @@ public class RecycleTouchHelpActivity extends Activity{
     private RecyclerView mRecyclerView;
     private TouchHelpAdapter mAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
