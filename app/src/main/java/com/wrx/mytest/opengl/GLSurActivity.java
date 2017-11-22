@@ -1,7 +1,9 @@
-package com.wrx.mytest;
+package com.wrx.mytest.opengl;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.wrx.mytest.R;
 
 /**
  * Created by wu_ru on 2017/5/30.

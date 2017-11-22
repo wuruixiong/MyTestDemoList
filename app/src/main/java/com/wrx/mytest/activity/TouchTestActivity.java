@@ -1,4 +1,4 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
 import android.app.Activity;
 import android.os.Bundle;

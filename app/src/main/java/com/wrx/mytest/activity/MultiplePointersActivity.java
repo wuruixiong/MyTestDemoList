@@ -1,10 +1,12 @@
-package com.wrx.mytest;
+package com.wrx.mytest.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.wrx.mytest.R;
 
 /**
  * Created by zhuanfa on 2017/6/9.

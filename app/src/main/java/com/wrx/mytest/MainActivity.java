@@ -1,7 +1,5 @@
 package com.wrx.mytest;
 
-import android.graphics.Color;
-import android.graphics.Matrix;
 import android.os.Bundle;
 
 
@@ -14,6 +12,21 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.activity.DragActivity;
+import com.wrx.mytest.activity.ElevationActivity;
+import com.wrx.mytest.activity.InputTypeActivity;
+import com.wrx.mytest.activity.LoginActivity;
+import com.wrx.mytest.activity.MaskActivity;
+import com.wrx.mytest.activity.MixViewEfActivity;
+import com.wrx.mytest.activity.MultiplePointersActivity;
+import com.wrx.mytest.activity.TestActivity;
+import com.wrx.mytest.activity.TextBeMaskActivity;
+import com.wrx.mytest.activity.TouchTestActivity;
+import com.wrx.mytest.activity.ViewLifecycleActivity;
+import com.wrx.mytest.activity.AnimZoomActivity;
+import com.wrx.mytest.memory.MemoryActivity;
+import com.wrx.mytest.opengl.GLSurActivity;
+import com.wrx.mytest.opengl.GLSurActivity2;
 import com.wrx.mytest.textIntent.IntentTestActivity;
 
 
@@ -27,10 +40,15 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
-                new Sample("Hello title1", "hello1",
+                new Sample("Hello title", "hello my test demo list",
                         TestActivity.class),
+                new Sample("Status bar and mix views", "Some views for effect : " +
+                        "dotted line"
+                        , MixViewEfActivity.class),
                 new Sample("Open GL", "GL SurfaceView Test",
                         GLSurActivity.class),
+                new Sample("Open GL 2", "GL SurfaceView Test",
+                        GLSurActivity2.class),
                 new Sample("View Lifecycle", "Test View Create Process Method",
                         ViewLifecycleActivity.class),
                 new Sample("View Touch", "Test View Touch",
@@ -43,8 +61,20 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         MultiplePointersActivity.class),
                 new Sample("Mask Test", "Test the layout mask",
                         MaskActivity.class),
-                new Sample("Be Text Mask", "Test acticity mask activity",
-                        TextBeMaskActivity.class),        };
+                new Sample("Be Text Mask", "Test activity mask activity",
+                        TextBeMaskActivity.class),
+                new Sample("Anim image zoom", "zooming with anim",
+                        AnimZoomActivity.class),
+                new Sample("Login Layout", "Login and keyboard up test",
+                        LoginActivity.class),
+                new Sample("InputType List", "All input type EditView",
+                        InputTypeActivity.class),
+                new Sample("Memory analyse", "memory overflow analyse",
+                        MemoryActivity.class),
+                new Sample("Drag", "drag view test",
+                        DragActivity.class),
+        };
+
 
         // Prepare the GridView
         mGridView = (GridView) findViewById(android.R.id.list);
