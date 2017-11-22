@@ -3,28 +3,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <RelativeLayout
+    <com.wrx.mytest.view.ViewTouchParent
         android:layout_width="300dp"
-        android:layout_height="300dp">
-        <Button
-            android:id="@+id/bt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_blue_light">
+
+        <com.wrx.mytest.view.ViewTouchChild
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_gravity="center"
             />
-        <com.wrx.mytest.view.TestTouchView
-            android:id="@+id/fill_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#66ff00ff"
-            />
-        <Button
-            android:id="@+id/bt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            />
-    </RelativeLayout>
+
+    </com.wrx.mytest.view.ViewTouchParent>
+
 
 </LinearLayout>
