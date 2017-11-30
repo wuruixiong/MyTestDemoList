@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Holo.Light"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
         >
 
         <meta-data
@@ -31,6 +31,7 @@
         <activity android:name=".GesturesActivity"/>
         <activity android:name=".glide.GlideActivity"/>
         <activity android:name=".http.OkHttpActivity"/>
+        <activity android:name=".clip.PathActivity"/>
         <activity android:name=".recycle.RecycleBtDeleteActivity"/>
         <activity android:name=".recycle.RecycleMeActivity"/>
         <activity android:name=".design.CollapsingToolbarActivity"

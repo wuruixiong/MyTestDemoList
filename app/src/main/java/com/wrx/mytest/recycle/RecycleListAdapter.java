@@ -31,7 +31,7 @@ public class RecycleListAdapter extends RecyclerSwipeAdapter<RecycleListAdapter.
 
     @Override
     public void onBindViewHolder(MyViewHolder viewHolder, int position) {
-        viewHolder.mTextView.setText((position + 1 )+".");
+        viewHolder.mTextView.setText("position: " + (position));
     }
 
     @Override
@@ -46,9 +46,9 @@ public class RecycleListAdapter extends RecyclerSwipeAdapter<RecycleListAdapter.
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            mView = itemView;
-            mTextView = (TextView)mView.findViewById(R.id.position);
-            mImageView = (ImageView)mView.findViewById(R.id.trash);
+            mView = itemView.findViewById(R.id.position);
+            mTextView = (TextView)itemView.findViewById(R.id.position_text);
+            mImageView = (ImageView)itemView.findViewById(R.id.trash);
             mView.setOnClickListener(this);
             mImageView.setOnClickListener(this);
         }
@@ -59,7 +59,7 @@ public class RecycleListAdapter extends RecyclerSwipeAdapter<RecycleListAdapter.
                 Toast.makeText(view.getContext().getApplicationContext(),
                         "click delete " + getAdapterPosition() + "", Toast.LENGTH_SHORT).show();
             } else
-            if (view.getId() == R.id.swipe) {
+            if (view.getId() == R.id.position) {
                 Toast.makeText(view.getContext().getApplicationContext(),
                         "click position " + getAdapterPosition() + "", Toast.LENGTH_SHORT).show();
             }
