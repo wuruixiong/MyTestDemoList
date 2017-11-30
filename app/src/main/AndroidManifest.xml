@@ -33,6 +33,8 @@
         <activity android:name=".http.OkHttpActivity"/>
         <activity android:name=".recycle.RecycleBtDeleteActivity"/>
         <activity android:name=".recycle.RecycleMeActivity"/>
+        <activity android:name=".design.CollapsingToolbarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

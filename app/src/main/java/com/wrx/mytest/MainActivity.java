@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.design.CollapsingToolbarActivity;
 import com.wrx.mytest.glide.GlideActivity;
 import com.wrx.mytest.http.OkHttpActivity;
 import com.wrx.mytest.recycle.RecycleBtDeleteActivity;
@@ -48,6 +49,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         RecycleBtDeleteActivity.class),
                 new Sample("Recycle delete2", "recycle delete",
                         RecycleMeActivity.class),
+                new Sample("CollapsingToolbar", "CollapsingToolbar test",
+                        CollapsingToolbarActivity.class),
         };
 
         // Prepare the GridView
