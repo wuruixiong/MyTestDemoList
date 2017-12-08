@@ -12,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
+import com.wrx.mytest.activity.CursorLoaderTestActivity;
 import com.wrx.mytest.activity.DragActivity;
 import com.wrx.mytest.activity.ElevationActivity;
 import com.wrx.mytest.activity.InputTypeActivity;
@@ -73,6 +74,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         MemoryActivity.class),
                 new Sample("Drag", "drag view test",
                         DragActivity.class),
+                new Sample("CursorLoader", "CursorLoader and LoaderManager test",
+                        CursorLoaderTestActivity.class),
         };
 
 

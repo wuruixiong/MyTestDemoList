@@ -3,6 +3,8 @@
     package="com.wrx.mytest">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -44,13 +46,11 @@
         <activity android:name=".activity.MultiplePointersActivity" />
         <activity android:name=".activity.MaskActivity" />
         <activity android:name=".activity.TextMaskActivity"
-            android:theme="@style/myTransparent"
-            />
-        <activity android:name=".activity.TextBeMaskActivity"
-            />
+            android:theme="@style/myTransparent" />
+        <activity android:name=".activity.TextBeMaskActivity" />
         <activity android:name=".activity.MixViewEfActivity"
-            android:theme="@style/MyBarTheme"
-            />
+            android:theme="@style/MyBarTheme" />
+        <activity android:name=".activity.CursorLoaderTestActivity" />
         <activity android:name=".activity.AnimZoomActivity" />
         <activity android:name=".activity.LoginActivity" android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".activity.InputTypeActivity" />
