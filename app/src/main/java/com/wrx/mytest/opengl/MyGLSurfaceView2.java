@@ -27,7 +27,7 @@ public class MyGLSurfaceView2 extends GLSurfaceView{
         // init open GL
         setEGLContextClientVersion(2);
         // create GLRenderer
-        mRenderer = new MyMoveGLRenderer();
+        mRenderer = new MyMoveGLRenderer(getContext());
         setRenderer(mRenderer);
     }
 
