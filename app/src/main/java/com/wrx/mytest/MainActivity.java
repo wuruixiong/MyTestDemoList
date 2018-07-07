@@ -26,9 +26,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         // Prepare list of samples in this dashboard.
         mSamples = new Sample[]{
                 new Sample("Hello title1", "hello1",
-                        TestActivity1.class),
-                new Sample("Hello title2", "hello2",
-                        TestActivity2.class),
+                        TestActivity.class),
+                new Sample("Retrofit2&RxJava2", "Retrofit2 test and RxJava2 test.",
+                        RetrofitAndRxJavaSampleActivity.class),
 
         };
 
