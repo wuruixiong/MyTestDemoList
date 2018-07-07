@@ -26,4 +26,10 @@
 
         ]]>
     </string>
+
+
+
+    <string name="MyAccessibilityService">MyAccessibilityService</string>
+
+
 </resources>

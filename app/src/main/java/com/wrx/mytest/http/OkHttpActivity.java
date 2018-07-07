@@ -9,6 +9,11 @@ import android.widget.Button;
 
 import com.wrx.mytest.R;
 
+import java.io.IOException;
+import java.lang.ref.SoftReference;
+
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -31,12 +36,16 @@ public class OkHttpActivity extends Activity{
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                get();
+                syncGet();
             }
         });
+
+        SoftReference<Button> softRef=new SoftReference<Button>(mButton);
+        SoftReference sr = new SoftReference(mButton);
+
     }
 
-    private void get() {
+    private void syncGet() {
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -52,6 +61,24 @@ public class OkHttpActivity extends Activity{
                 }
             }
         }).start();
+    }
+
+    private void asyncTaskGet () {
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder()
+                .url(mUrl1)
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String s = response.body().string();
+                Log.e("", "");
+            }
+        });
     }
 
 }

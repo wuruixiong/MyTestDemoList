@@ -14,10 +14,12 @@ import android.widget.TextView;
 import com.wrx.mytest.design.CollapsingToolbarActivity;
 import com.wrx.mytest.clip.PathActivity;
 import com.wrx.mytest.glide.GlideActivity;
+import com.wrx.mytest.http.BaseHttpActivity;
 import com.wrx.mytest.http.OkHttpActivity;
 import com.wrx.mytest.recycle.RecycleBtDeleteActivity;
 import com.wrx.mytest.recycle.RecycleMeActivity;
 import com.wrx.mytest.recycle.RecycleTouchHelpActivity;
+import com.wrx.mytest.sms.ComposeSmsActivity;
 
 
 /**
@@ -43,6 +45,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         GlideActivity.class),
                 new Sample("OK http", "OK http test",
                         OkHttpActivity.class),
+                new Sample("Base http", "base http test",
+                        BaseHttpActivity.class),
                 new Sample("Draw path", "draw path",
                         PathActivity.class),
                 new Sample("Recycle delete", "recycle delete",
@@ -51,6 +55,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                         RecycleMeActivity.class),
                 new Sample("CollapsingToolbar", "CollapsingToolbar test",
                         CollapsingToolbarActivity.class),
+                new Sample("SMS test", "sms test for write",
+                        ComposeSmsActivity.class),
         };
 
         // Prepare the GridView
