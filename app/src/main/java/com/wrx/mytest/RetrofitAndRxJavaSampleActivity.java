@@ -129,6 +129,7 @@ public class RetrofitAndRxJavaSampleActivity extends Activity{
                 .subscribe(new Observer<UserBean>() {
                     @Override
                     public void onSubscribe(Disposable d) {
+                        showWait();
                     }
                     @Override
                     public void onNext(UserBean jsonStatus) {
@@ -143,6 +144,7 @@ public class RetrofitAndRxJavaSampleActivity extends Activity{
                     }
                     @Override
                     public void onComplete() {
+                        hideWait();
                     }
                 });
     }
